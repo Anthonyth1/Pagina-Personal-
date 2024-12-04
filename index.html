@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Carousel Example</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    /* Opcional: Ajustes adicionales de estilo para el carrusel */
+    .carousel-item {
+      height: 65vh;
+      background-color: #777;
+      color: white;
+      text-align: center;
+    }
+    .carousel-item img {
+      max-height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Anthony Art</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <img src="./assets/de una nov.png" alt="Slide 1">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Producciones 3D.</h1>
+              <p>“Transformamos tus ideas en realidad 3D. Imagina, nosotros lo creamos.”.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <video controls autoplay loop muted poster="./assets/0000-0330.mkv">
+                <source src="./assets/0000-0330.mkv" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+              </video>
+        
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Edición .</h1>
+              <p>Lo mejor en edicion 3D..</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/44.png" alt="Slide 3">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>y mucho mas.</h1>
+              <p>Solo contactanos.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <div class="container marketing mt-5">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img width="140" height="140" src="./assets/de1 (1).png" alt="">
+     
+        <h2>Logos</h2>
+        <p>Some representative placeholder content for the first column of text below the carousel. This is some additional content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+  
+      <div class="col-lg-4">
+        <img width="140" height="140" src="./assets/blend.png" alt="">
+        <h2>Blender</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+  
+      <div class="col-lg-4">
+        <img width="140" height="140" src="./assets/Screenshot 2024-11-11 093824.png" alt="">
+        <h2>Animacion</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  
+    <!-- START THE FEATURETTES -->
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">“Desde tu visión hasta el render final: creaciones en Blender 3D”. <span class="text-muted">Solo imaginalo.</span></h2>
+        <p class="lead">“Llevamos tus ideas al siguiente nivel con diseños 3D de alta calidad. Desde productos realistas hasta animaciones impactantes, nuestro equipo utiliza Blender para transformar conceptos en visuales increíbles. Con nosotros, tu visión cobra vida en cada proyecto.”.</p>
+      </div>
+      <div class="col-md-5">
+        <video width="500" height="500" controls autoplay loop muted poster="./assets/0000-0600.mkv">
+            <source src="./assets/0000-0600.mkv" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">“Tu visión hecha realidad en 3D con Blender”. <span class="text-muted">Todo es posible.</span></h2>
+        <p class="lead">“Especialistas en Blender, creamos modelos 3D que cuentan historias y capturan la esencia de tu marca. Ya sea que necesites prototipos de productos, visualizaciones arquitectónicas o animaciones detalladas, nuestro enfoque es hacer realidad tus ideas con precisión y creatividad.”</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <video width="500" height="500" controls autoplay loop muted poster="./assets/0000-0330.mkv">
+            <source src="./assets/0000-0330.mkv" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">“Renders y animaciones que llevan tu proyecto al siguiente nivel”. <span class="text-muted">Blender.</span></h2>
+        <p class="lead">“El poder del 3D al alcance de tu marca. Con Blender, desarrollamos contenido visual que impresiona: renders realistas, animaciones fluidas y modelos personalizados. Conviértete en el protagonista de tu industria con proyectos que dejan huella.”</p>
+      </div>
+      <div class="col-md-5">
+        <img width="500" height="500" src="./assets/blender.jpeg" alt="Slide 1">
+    
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <!-- /END THE FEATURETTES -->
+  
+    <!-- Footer -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2023–2024 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  </div><!-- /.container -->
+  
+</body>
+</html>
